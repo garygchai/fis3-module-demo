@@ -1,0 +1,55 @@
+@charset "utf-8";
+/*index*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td { margin:0; padding:0; }
+table { border-collapse:collapse; border-spacing:0; }
+fieldset, iframe, img { border:0; }
+address, caption, cite, code, dfn, em, strong, th, var,i { font-style:normal; font-weight:normal; }
+ol, ul { list-style:none; }
+caption, th { text-align:left; }
+h1, h2, h3, h4, h5, h6 { font-size:100%; color:#000;font-weight:normal;color:#666666;}
+body, button, input, select, textarea { font-family:Microsoft YaHei, \5b8b\4f53, Arial, Verdana; font-size:12px; }
+.no_yahei{ font-family:Tahoma,Arial,Helvetica,STHeiti;}
+button{ border:0 none; padding:0; cursor:pointer}
+.input-text{border:1px solid #cacaca; background:#fff; width:145px; height:24px; line-height:24px;  padding:0 5px;}
+.input-button,.input-button-disabled{background:#4ead2c; color:#fff; padding:0 16px; text-align:center; height:26px; line-height:26px; font-family:Microsoft YaHei; font-size:14px; border:0; cursor:pointer; position:relative; top:2px; display:inline-block;}
+.input-button:hover{ background:#85d332; color:#fff;}
+.input-button-disabled,.input-button-disabled:hover{ background:#AAAAAB; color:#fff; cursor:default;}
+.disBtn,.disBtn:hover{ background: #999!important; cursor: default!important;}
+.verify-code{ vertical-align:middle;}
+.fxtpl-html{ display: none;}/* JS模板默认渲染前的隐藏样式(老版本) */
+.fxtpl-hidden{ visibility: hidden;}/* JS模板默认渲染前隐藏 */
+.fxtpl-loading{width: 72px;height: 8px;position: absolute;top: 50%;left: 50%;margin-left: -36px; z-index: 999999;background: url(/static/images/fxtpl_loading.gif);}
+table.white{border-collapse:collapse; background:#fff;}
+table.white thead{ color:#a9a9a9}
+table.white td{border:1px solid #dedede; text-align:center; padding:8px 16px;}
+/*clear float*/
+.clearboth { clear:both; font-size:1px; line-height:1px; height:1px; }
+/* Clear Fix */
+.clearfix:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+.clearfix { display:inline-block; }
+/* Hide from IE Mac \*/
+.clearfix { display:block; }
+/* End hide from IE Mac */
+/* end of clearfix */
+/*html5*/
+article,aside,dialog,footer,header,section,footer,b_nav,figure,menu{display:block}
+/* general class */
+/*float*/
+.fl { float:left; display:inline; }
+.fr { float:right; display:inline; }
+
+/*display*/
+.block{display:block;}
+.none{display:none;}
+.hidden{ visibility:hidden;}
+body{ background:#f3f3f3;color:#000;}
+/* general style */
+/*title*/
+h1{font-size:24px;}
+h2{font-size:16px;}
+h3{font-size:14px;}
+/*link*/
+a {text-decoration:none; color:#666666;}
+a:hover{color:#666666;-webkit-transition:color 0.3s linear 0s;-moz-transition:color 0.3s linear 0s;-ms-transition:color 0.3s linear 0s;}
+a:active{blr:expression(this.onFocus=this.blur()) }
+a{outline:none;}
