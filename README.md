@@ -211,7 +211,7 @@ define('static/common/js/mod/react', function(require, exports, module) {
 2、js文件都加了define包装，比如"static/helloworld/index"是index模块的moduleId;
 3、require('react')编译成了require('static/common/js/mod/react')，因为我们通过path配置了别名；
 我们可以发现，通过fis生成的js代码define的moduleId跟index.html中sourceMap的moduleId是一致的。这样mod.js就能通过map的依赖关系加载到所有的模块啦！下面是demo在浏览器中的运行结果截图：
-![mod.js运行结果](/content/images/2015/12/ND-5--I8-VT412BYGXF8F-G.png)
+![mod.js运行结果](http://ued.fanxing.com/content/images/2015/12/ND-5--I8-VT412BYGXF8F-G.png)
 以上就是通过fis3-hook-commonjs实现模块化的过程，当然插件还有一些配置项供开发人员配置，感兴趣的同学可以通过阅读[fis3-hook-commonjs](http://https://github.com/fex-team/fis3-hook-commonjs)的文档自行了解。
 ####AMD模块化
 首先安装[fis3-hook-amd](https://github.com/fex-team/fis3-hook-amd)插件，`npm install fis3-hook-amd --save`。
@@ -286,7 +286,7 @@ require.config({paths:{
   }});
 ```
 js文件被包装成了遵循AMD规范的define形式。下面是demo执行结果：
-![fis3-hook-amd](/content/images/2015/12/XP-M---XE-W0-EZ2-4-UJ-U.png)
+![fis3-hook-amd](http://ued.fanxing.com/content/images/2015/12/XP-M---XE-W0-EZ2-4-UJ-U.png)
 
 ####CMD模块化
 安装[fis3-hook-cmd](https://github.com/fex-team/fis3-hook-cmd)插件，`npm install fis3-hook-cmd --save`。
@@ -397,6 +397,6 @@ seajs.config({alias:{
 
 ```
 查看结果：
-![fis3-hook-cmd](/content/images/2015/12/5ES---W92T--T-7ABK-VA5R.png)
+![fis3-hook-cmd](http://ued.fanxing.com/content/images/2015/12/5ES---W92T--T-7ABK-VA5R.png)
 
 因为工程化，让模块化变得简单，可复用！你不用在乎使用你模块的人是使用commonJS还是seaJS还是requireJS作为模块加载器，你只需要专心开发你的模块，并通过require加载你要依赖的模块即可。怎么样？是不是很爽？那就用起来吧~
